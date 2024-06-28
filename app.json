@@ -11,17 +11,34 @@
       "resizeMode": "contain",
       "backgroundColor": "#000"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleSignIn": {
+          "certificateHash": "your_certificate_hash_here"
+        },
+        "scheme": {
+          "host": "your-app-host",
+          "appName": "your-app-name"
+        }
+      },
+      "package": "com.anonymous.firebaseappivansalguero"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d55b0cfe-99fa-4dd0-9a32-f34fc6028d71"
+      }
     }
   }
 }
